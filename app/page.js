@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import envelopeImg from "./assets/envelope.png";
 import notepadImg from "./assets/notepad.png";
 import LastRecord from "./components/LastRecord";
@@ -9,12 +10,12 @@ export default function Home() {
     <>
       <Navbar />
       <div className=" flex flex-col gap-4 p-10 h-full">
-        <button className="bg-blue-primary flex justify-between items-center px-6 py-2 rounded-md gap-4 text-white font-semibold text-lg">
+        <Link href={'/create-log'} className="bg-blue-primary flex justify-between items-center px-6 py-2 rounded-md gap-4 text-white font-semibold text-lg">
           <Image src={notepadImg} className="h-10 w-auto" /> Create Log Manually
-        </button>
-        <button className="bg-yellow-primary flex justify-between items-center px-6 py-2 rounded-md gap-4 text-white font-semibold text-lg">
+        </Link>
+        <Link href={'/create-log'} className="bg-yellow-primary flex justify-between items-center px-6 py-2 rounded-md gap-4 text-white font-semibold text-lg">
           <Image src={envelopeImg} className="h-10 w-auto" /> Import from Email
-        </button>
+        </Link>
       </div>
       <div className="flex flex-col gap-2 p-2">
         <div className="flex flex-row justify-between items-center">
