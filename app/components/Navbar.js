@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import bell from "../assets/bell.png";
 import burger_menu from "../assets/burger_menu.png";
@@ -10,15 +11,19 @@ const Navbar = () => {
   return (
     <div className="bg-blue-primary px-4 py-3 flex flex-row justify-between items-center relative">
       <Image src={logo} alt="Logo" className="h-10 w-auto" />
-      <div className="flex flex-row justify-center items-center gap-6">
-      <button>
-        <Image src={bell} alt="bell" className="h-10 w-auto" />
-      </button>
-      <button onClick={() => setMenu(true)}>
-        <Image src={burger_menu} alt="Logo" className="h-8 w-auto" />
-      </button>
+      <div className="flex flex-row justify-center items-center gap-6 ">
+        
+        <Link href={"/notifications"} className="relative cursor-pointer">
+          <div className="bg-red-500 rounded-full absolute top-0 left-0 text-center p-1 text-white text-xs">12</div>
+          <button>
+            <Image src={bell} alt="bell" className="h-10 w-auto" />
+          </button>
+        </Link>
+        <button onClick={() => setMenu(true)}>
+          <Image src={burger_menu} alt="Logo" className="h-8 w-auto" />
+        </button>
       </div>
-      
+
       <div
         className={`bg-blue-primary h-screen absolute flex flex-col justify-start items-end gap-10 top-0 right-0 duration-300 ease-in-out ${
           menu ? "w-auto px-10 py-4" : "w-0"
@@ -31,7 +36,6 @@ const Navbar = () => {
             </button>
 
             <ul className="flex flex-col gap-4 text-yellow-primary text-lg">
-
               <li>Home</li>
               <li>Create Log</li>
               <li>See Logs</li>

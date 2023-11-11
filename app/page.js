@@ -3,6 +3,7 @@ import envelopeImg from "./assets/envelope.png";
 import notepadImg from "./assets/notepad.png";
 import LastRecord from "./components/LastRecord";
 import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
     <>
