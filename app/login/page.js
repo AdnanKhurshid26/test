@@ -1,5 +1,5 @@
 import Image from "next/image";
-import biglogo from "../assets/biglogo.png";
+import biglogo from "../../assets/biglogo.png";
 
 const page = () => {
   return (

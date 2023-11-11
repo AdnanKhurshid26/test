@@ -1,6 +1,6 @@
 import Image from "next/image";
-import uploadImg from "../assets/upload.png";
-import Navbar from "../components/Navbar";
+import uploadImg from "../../assets/upload.png";
+import Navbar from "../../components/Navbar";
 
 const page = () => {
   return (

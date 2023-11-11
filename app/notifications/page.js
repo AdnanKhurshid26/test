@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Notification from "../components/Notification";
+import Navbar from "../../components/Navbar";
+import Notification from "../../components/Notification";
 const page = () => {
   return (
     <>

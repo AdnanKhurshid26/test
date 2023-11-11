@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import envelopeImg from "./assets/envelope.png";
-import notepadImg from "./assets/notepad.png";
-import LastRecord from "./components/LastRecord";
-import Navbar from "./components/Navbar";
+import envelopeImg from "../assets/envelope.png";
+import notepadImg from "../assets/notepad.png";
+import LastRecord from "../components/LastRecord";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
